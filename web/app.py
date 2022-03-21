@@ -59,7 +59,7 @@ def people():
 
 @app.route('/file')
 def file():
-    dal = [(a.isbn, a.title, a.author, a.type, a.date_publication)for a in docu]
+    dal = [(a.isbn, a.title, a.author, a.type, a.date_publication a.number)for a in docu]
     print(dal)
     return render_template('file.html', value=dal)
 
